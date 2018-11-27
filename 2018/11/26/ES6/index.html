@@ -6,7 +6,7 @@
 <p><strong>2.var a=function(){}</strong></p>
 <p><strong>匿名函数的定义方法，若是在定义之前调用了，系统会报错</strong>。可以理解为，只用<strong>运行到这个方法时</strong>才能对变量a进行初始化，若是没有对变量a初始化，则会报错。此时，<strong>a代表后面匿名函数的返回值</strong>。</p>
 <p><strong>3.var a=new function(){}</strong></p>
-<p>在js中，方法被当作一个类来处理，这中定义方式下，a即带表了这个方法的类，也就是这个方法本身。但是有一种特殊情况，若是在该方法中，存在<code>return</code> 数组、方法、或是别的类，<strong>那么a不表示一个方法</strong>，而是表示一个<strong>返回</strong>的<strong>新类</strong>了。</p>
+<p>在js中，方法被当作<strong>一个类</strong>来处理，这中定义方式下，a即带表了这个方法的类，也就是这个方法本身。但是有一种特殊情况，若是在该方法中，存在<code>return</code> 数组、方法、或是别的类，<strong>那么a不表示一个方法</strong>，而是表示一个<strong>返回</strong>的<strong>新类</strong>了。</p>
 <h2 id="预备知识2–this-的工作原理"><a href="#预备知识2–this-的工作原理" class="headerlink" title="预备知识2–this 的工作原理"></a>预备知识2–<code>this</code> 的工作原理</h2><p>JavaScript 有一套完全不同于其它语言的对 <code>this</code> 的处理机制。 在不同的情况下 ，<code>this</code> 指向的各不相同。</p>
 <p>this 指向其所有者的作用域。</p>
 <h3 id="全局范围内"><a href="#全局范围内" class="headerlink" title="全局范围内"></a>全局范围内</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">this;</span><br></pre></td></tr></table></figure>
